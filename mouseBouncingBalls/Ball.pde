@@ -19,7 +19,7 @@ class Ball {
   }
 
   void move(){
-    speed = newSpeed + gravity;
+    speed = speed + gravity;
     y = y + speed;
     if(y > height - w/2){
       speed *= -0.95;
@@ -52,10 +52,10 @@ class Ball {
     }
   }
   
-  void update(){
-    speed += speedChange;
+  //void update(){
+  //  speed += speedChange;
   
-  }
+  //}
 
 
 
