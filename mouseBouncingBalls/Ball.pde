@@ -4,7 +4,6 @@ class Ball {
   float speed;
   float newSpeed;
   float speedChange = 0.1;
-  float gravity;
   float w;
   float life = 255;
   
@@ -13,26 +12,15 @@ class Ball {
     y = tempY;
     w = tempW;
     speed = 5;
-    newSpeed = 5;
-    gravity = 0.2;
-  
   }
 
-  void move(){
+  void move(float gravity){
     speed = speed + gravity;
     y = y + speed;
     if(y > height - w/2){
       speed *= -0.95;
       y = height - w/2;
     }
-    
-  //  if ((int)(message.getMessage()[1] & 0xFF) == 16){
-  //   float speed = map( (int)(message.getMessage()[2] & 0xFF), 0, 127, 0, 5);
-  //   newSpeed = speed;
-     
-     
-     
-  //}
   }
 
   void display(){
@@ -51,12 +39,4 @@ class Ball {
       return false;
     }
   }
-  
-  //void update(){
-  //  speed += speedChange;
-  
-  //}
-
-
-
 }
