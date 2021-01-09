@@ -12,8 +12,8 @@ class Ball {
     x = tempX;
     y = tempY;
     w = tempW;
-    speed = 0;
-    newSpeed = 0;
+    speed = 5;
+    newSpeed = 5;
     gravity = 0.2;
   
   }
