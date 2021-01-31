@@ -13,7 +13,7 @@ void midiMessage(MidiMessage message) {
     //float speed = map( (int)(message.getMessage()[2] & 0xFF), 0, 127, 0.0, 5.0);
     // println("xspeed: "+xspeed);
     
-    // gravity = map((int)(message.getMessage()[2] & 0xFF), 0, 127, 0.0, 5.0);
+    gravity = map((int)(message.getMessage()[2] & 0xFF), 0, 127, 0.2, 1);
   }
   
   // Slider 1: Speed in the y-axis

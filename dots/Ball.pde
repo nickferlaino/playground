@@ -1,11 +1,9 @@
 class Ball {
   float x;
   float y;
-  float speed;
-  float newSpeed;
-  float speedChange = 0.1;
   float w;
-  float life = 500;
+  float life = 255;
+  float speed;
   
   Ball(float tempX, float tempY, float tempW){
     x = tempX;
@@ -17,15 +15,11 @@ class Ball {
   void move(float gravity){
     speed = speed + gravity;
     y = y + speed;
-    if (y > height - w/2){
-      speed *= -1.05;
+    if(y > height - w/2){
+      speed *= -0.95;
       y = height - w/2;
     }
-    else if (y < w/2){
-      speed *= -0.95;
-      y = w/2;
-    }
-    
+    println(speed);
   }
 
   void display(){
