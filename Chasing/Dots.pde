@@ -8,10 +8,11 @@ class Dots {
    float dotX = 0;
    
    //Dots (float tempX, float tempY, float tempZ, float tempPixelSize){
-     Dots (){
+   //Dots (){
+   Dots (float tempX, float tempY){   
      
-     //centerX = tempX;
-     //centerY = tempY;
+     dotX = tempX;
+     centerY = tempY;
      //angleZ = tempZ;
      //pixelSize = tempPixelSize;
    }
